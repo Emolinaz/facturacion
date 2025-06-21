@@ -1,0 +1,49 @@
+/* Estilos específicos para correlativo de facturación */
+.info-section {
+  margin-bottom: 25px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  color: #1565c0;
+}
+
+.info-card i {
+  font-size: 24px;
+  margin-top: 2px;
+}
+
+.info-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.info-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Estilos específicos para la tabla de correlativos */
+.data-table td:nth-child(2) {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+/* Responsive para correlativos */
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data-table td:nth-child(2) {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,68 @@
+/* Estilos específicos para la página de CAI */
+.info-section {
+  margin-bottom: 25px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: #e8f5e8;
+  border: 1px solid #c3e6c3;
+  border-radius: 8px;
+  color: #2d5a2d;
+}
+
+.info-card i {
+  font-size: 24px;
+  margin-top: 2px;
+}
+
+.info-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.info-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Estilos específicos para la tabla de CAI */
+.data-table td:nth-child(2) {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  max-width: 200px;
+  word-break: break-all;
+}
+
+/* Indicadores de estado específicos para CAI */
+.status.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive para CAI */
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data-table td:nth-child(2) {
+    font-size: 10px;
+    max-width: 150px;
+  }
+}
