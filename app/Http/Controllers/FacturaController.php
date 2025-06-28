@@ -11,7 +11,7 @@ class FacturaController extends Controller
 
     public function index()
     {
-        return view('generar-factura');
+        return view('Pages.generador-facturas');
     }
 
     public function estadisticas()
